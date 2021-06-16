@@ -65,6 +65,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
+    minHeight: "900px",
     backgroundColor: "#dbdbdb",
   },
   root: {
