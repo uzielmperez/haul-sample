@@ -11,10 +11,7 @@ const columns = [
 ];
 
 const WeeklyTable = ({ rowDataObj }) => {
-  let rowDataArray = [];
-  for (const weekNumber in rowDataObj) {
-    rowDataArray.push(rowDataObj[weekNumber]);
-  }
+  let rowDataArray = Object.values(rowDataObj);
   return (
     <div style={{ height: 700, width: "95%" }}>
       <DataGrid

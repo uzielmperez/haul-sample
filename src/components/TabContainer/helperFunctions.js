@@ -88,7 +88,7 @@ const getFormattedLogs = sortedLogs => {
             date: moment(startTime).format("ll"),
             hoursWorked,
             dailyGross: `$${Math.round(hoursWorked * 22 * 100) / 100}`,
-            logStartTime: `${moment(startTime).format("lll")}`,
+            logStartTime: moment(startTime).format("lll"),
             logEndTime: moment(endTime).format("lll"),
             complianceHours:
               complianceHours < 56
